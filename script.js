@@ -89,4 +89,23 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     renderEvents(btn.dataset.category);
   });
+  document.getElementById("eventForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const newEvent = {
+        title: document.getElementById("title").value,
+        date: document.getElementById("date").value,
+        time: document.getElementById("time").value,
+        venue: document.getElementById("venue").value,
+        category: document.getElementById("category").value,
+        link: document.getElementById("link").value
+    };
+
+    events.push(newEvent);  // Add event to main list
+    displayEvents(events);  // Re-render events
+
+    this.reset(); // Clear form
 });
+
+});
+

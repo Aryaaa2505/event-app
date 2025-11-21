@@ -52,3 +52,39 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
+.add-event {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.add-event h2 {
+  margin-bottom: 10px;
+}
+
+.add-event input,
+.add-event select,
+.add-event button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-event button {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.add-event button:hover {
+  opacity: 0.8;
+}
+
+
+

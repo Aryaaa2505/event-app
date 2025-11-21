@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<section class="add-event">
+  <h2>Add New Event</h2>
+  <form id="eventForm">
+    <input type="text" id="title" placeholder="Event Title" required>
+    <input type="date" id="date" required>
+    <input type="text" id="time" placeholder="Time" required>
+    <input type="text" id="venue" placeholder="Venue" required>
+
+    <select id="category" required>
+      <option value="">Select Category</option>
+      <option value="tech">Tech</option>
+      <option value="cultural">Cultural</option>
+      <option value="sports">Sports</option>
+    </select>
+
+    <input type="url" id="link" placeholder="Registration Link" required>
+
+    <button type="submit">Add Event</button>
+  </form>
+</section>
 
   <header>
     <h1>Campus Events</h1>
@@ -32,3 +52,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
